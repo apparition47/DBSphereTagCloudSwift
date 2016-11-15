@@ -1,5 +1,5 @@
 //
-//  DBMatrix.h
+//  DBMatrix.swift
 //  sphereTagCloud
 //
 //  Created by Xinbao Dong on 14/8/31.
@@ -15,9 +15,7 @@ public struct DBMatrix {
 }
 
 func DBMatrixMake(_ column: Int, row: Int) -> DBMatrix {
-    var matrix: DBMatrix
-    matrix.column = column
-    matrix.row = row
+    var matrix: DBMatrix = DBMatrix(column: column, row: row, matrix: [[CGFloat]](repeating: [CGFloat](repeating: 0, count: 4), count: 4))
     for i in 0..<column {
         for j in 0..<row {
             matrix.matrix[i][j] = 0
@@ -26,10 +24,10 @@ func DBMatrixMake(_ column: Int, row: Int) -> DBMatrix {
     return matrix
 }
 
-func DBMatrixMakeFromArray(_ column: Int, row: Int, data: [[CGFloat]]) -> DBMatrix {
+func DBMatrixMakeFromArray(_ column: Int, row: Int, data: [CGFloat]) -> DBMatrix {
     var matrix = DBMatrixMake(column, row: row)
     for i in 0..<column {
-        var t: CGFloat = data + CGFloat(i * row)
+        var t: CGFloat = data[0] + CGFloat(i * row)
         for j in 0..<row {
             matrix.matrix[i][j] = t + CGFloat(j)
         }
@@ -62,42 +60,42 @@ func DBPointMakeRotation(_ point: DBPoint, direction: DBPoint, angle: CGFloat) -
     if direction.z * direction.z + direction.y * direction.y != 0 {
         var cos1: CGFloat = direction.z / sqrt(direction.z * direction.z + direction.y * direction.y)
         var sin1: CGFloat = direction.y / sqrt(direction.z * direction.z + direction.y * direction.y)
-        var t1 = [[1, 0, 0, 0], [0, cos1, sin1, 0], [0, -sin1, cos1, 0], [0, 0, 0, 1]]
+        var t1 = [[1, 0, 0, 0], [0, cos1, sin1, 0], [0, -sin1, cos1, 0], [0, 0, 0, 1]] as AnyObject! as! [CGFloat]
         var m1 = DBMatrixMakeFromArray(4, row:4, data:t1)
-        result = DBMatrixMutiply(a:result, b:m1)
+        result = DBMatrixMutiply(result, b:m1)
     }
     
     if direction.x * direction.x + direction.y * direction.y + direction.z * direction.z != 0 {
         var cos2: CGFloat = sqrt(direction.y * direction.y + direction.z * direction.z) / sqrt(direction.x * direction.x + direction.y * direction.y + direction.z * direction.z)
         var sin2: CGFloat = -direction.x / sqrt(direction.x * direction.x + direction.y * direction.y + direction.z * direction.z)
-        var t2 = [[cos2, 0, -sin2, 0], [0, 1, 0, 0], [sin2, 0, cos2, 0], [0, 0, 0, 1]]
+        var t2 = [[cos2, 0, -sin2, 0], [0, 1, 0, 0], [sin2, 0, cos2, 0], [0, 0, 0, 1]] as AnyObject! as! [CGFloat]
         var m2 = DBMatrixMakeFromArray(4, row:4, data:t2)
-        result = DBMatrixMutiply(a:result, b:m2)
+        result = DBMatrixMutiply(result, b:m2)
     }
     
     var cos3: CGFloat = cos(angle)
     var sin3: CGFloat = sin(angle)
-    var t3 = [[cos3, sin3, 0, 0], [-sin3, cos3, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
-    var m3 = DBMatrixMakeFromArray(4, 4, t3)
-    result = DBMatrixMutiply(result, m3)
+    var t3 = [[cos3, sin3, 0, 0], [-sin3, cos3, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]] as AnyObject! as! [CGFloat]
+    var m3 = DBMatrixMakeFromArray(4, row:4, data:t3)
+    result = DBMatrixMutiply(result, b:m3)
     
     if direction.x * direction.x + direction.y * direction.y + direction.z * direction.z != 0 {
         var cos2: CGFloat = sqrt(direction.y * direction.y + direction.z * direction.z) / sqrt(direction.x * direction.x + direction.y * direction.y + direction.z * direction.z)
         var sin2: CGFloat = -direction.x / sqrt(direction.x * direction.x + direction.y * direction.y + direction.z * direction.z)
-        var t2_ = [[cos2, 0, sin2, 0], [0, 1, 0, 0], [-sin2, 0, cos2, 0], [0, 0, 0, 1]]
+        var t2_ = [[cos2, 0, sin2, 0], [0, 1, 0, 0], [-sin2, 0, cos2, 0], [0, 0, 0, 1]] as AnyObject! as! [CGFloat]
         var m2_ = DBMatrixMakeFromArray(4, row:4, data:t2_)
-        result = DBMatrixMutiply(a:result, b:m2_)
+        result = DBMatrixMutiply(result, b:m2_)
     }
     
     if direction.z * direction.z + direction.y * direction.y != 0 {
         var cos1: CGFloat = direction.z / sqrt(direction.z * direction.z + direction.y * direction.y)
         var sin1: CGFloat = direction.y / sqrt(direction.z * direction.z + direction.y * direction.y)
-        var t1_ = [[1, 0, 0, 0], [0, cos1, -sin1, 0], [0, sin1, cos1, 0], [0, 0, 0, 1]]
+        var t1_ = [[1, 0, 0, 0], [0, cos1, -sin1, 0], [0, sin1, cos1, 0], [0, 0, 0, 1]] as AnyObject! as! [CGFloat]
         var m1_ = DBMatrixMakeFromArray(4, row:4, data:t1_)
-        result = DBMatrixMutiply(a:result, b:m1_)
+        result = DBMatrixMutiply(result, b:m1_)
     }
     
-    var resultPoint = DBPointMake(result.matrix[0][0], result.matrix[0][1], result.matrix[0][2])
+    var resultPoint = DBPointMake(result.matrix[0][0], y: result.matrix[0][1], z: result.matrix[0][2])
     
     return resultPoint
 }

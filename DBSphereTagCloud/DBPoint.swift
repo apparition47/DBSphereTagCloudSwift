@@ -1,5 +1,5 @@
 //
-//  DBPoint.h
+//  DBPoint.swift
 //  sphereTagCloud
 //
 //  Created by Xinbao Dong on 14/8/31.
@@ -15,9 +15,6 @@ public struct DBPoint {
 }
 
 public func DBPointMake(_ x: CGFloat, y: CGFloat, z: CGFloat) -> DBPoint {
-    var point: DBPoint
-    point.x = x
-    point.y = y
-    point.z = z
+    var point: DBPoint = DBPoint(x: x, y: y, z: z)
     return point
 }
