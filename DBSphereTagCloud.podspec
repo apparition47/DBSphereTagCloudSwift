@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "DBSphereTagCloud"
+  s.name         = "DBSphereTagCloudSwift"
   s.version      = "1.0.0"
   s.summary      = "A 3D spherical tag cloud view of iOS."
 
@@ -24,8 +24,8 @@ Pod::Spec.new do |s|
 
                    DESC
 
-  s.homepage     = "https://github.com/dongxinb/DBSphereTagCloud"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+  s.homepage     = "https://github.com/apparition47/DBSphereTagCloudSwift"
+s.screenshots  = "https://user-images.githubusercontent.com/3298414/31832079-9be84c94-b600-11e7-95d7-ccd980253199.gif"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

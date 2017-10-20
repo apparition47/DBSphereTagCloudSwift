@@ -1,15 +1,22 @@
 DBSphereTagCloudSwift
 ================
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 A 3D spherical tag cloud view for iOS using UIKit and Accelerate (provided by [SwiftNum](https://github.com/donald-pinckney/SwiftNum)). Ported from the original [Objective-C version written by @dongxinb](https://github.com/dongxinb/DBSphereTagCloud).
 
-![DBSphereTagCloud](https://raw.githubusercontent.com/apparition47/DBSphereTagCloud/master/SCREENSHOT.gif)
+![DBSphereTagCloud](https://user-images.githubusercontent.com/3298414/31832079-9be84c94-b600-11e7-95d7-ccd980253199.gif)
 
 ## Features
 
 * 3D effect 3D效果
 * auto rotation 自动旋转效果
 * inertial effect after rotation 惯性滚动效果
+
+## Requirements
+
+* iOS 8+
+* Swift 4
+* Xcode 9
 
 ## Installation
 
@@ -26,7 +33,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'DBSphereTagCloud', :git => "https://github.com/apparition47/DBSphereTagCloud.git", :branch => "swift", :submodules => true
+    pod 'DBSphereTagCloudSwift', :git => "https://github.com/apparition47/DBSphereTagCloudSwift.git", :submodules => true
 end
 
 ```
