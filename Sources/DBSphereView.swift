@@ -16,15 +16,15 @@ struct DBPoint {
 
 open class DBSphereView: UIView, UIGestureRecognizerDelegate {
     
-    var tags: [UIView]
-    var coordinate = [DBPoint]()
-    var normalDirection: DBPoint
-    var last = CGPoint.zero
+    var tags = [UIView]()
+    private var coordinate = [DBPoint]()
+    var normalDirection: DBPoint = DBPoint(x: 0, y: 0, z: 0)
+    private var last = CGPoint.zero
     
     var velocity: CGFloat = 0.0
     
-    var timer: CADisplayLink!
-    var inertia: CADisplayLink!
+    private var timer: CADisplayLink!
+    private var inertia: CADisplayLink!
     
     // MARK: - initial set
     
@@ -37,7 +37,6 @@ open class DBSphereView: UIView, UIGestureRecognizerDelegate {
      */
     public func setCloudTags(_ array: [UIView]) {
         tags = array
-//        coordinate = [Any]() /* capacity: 0 */
         for i in 0..<tags.count {
             let view:UIView = tags[i]
             view.center = CGPoint(x: self.frame.size.width / 2.0, y: self.frame.size.height / 2.0)
@@ -52,8 +51,6 @@ open class DBSphereView: UIView, UIGestureRecognizerDelegate {
             let z: CGFloat = sin(p3) * r
             
             let point = DBPoint(x: x, y: y, z: z)
-//            let value: NSValue = NSValue(cgRect: CGRect(x:0, y:0, width:1, height:1));
-//            value.getValue(&point)
             coordinate.append(point)
             
             let time: CGFloat = (CGFloat(arc4random() % 10) + 10.0) / 20.0
@@ -73,39 +70,41 @@ open class DBSphereView: UIView, UIGestureRecognizerDelegate {
      *  Starts the cloud autorotation animation.
      */
     func timerStart() {
-        timer = CADisplayLink(target: self, selector: #selector(self.autoTurnRotation))
-        timer.add(to: RunLoop.main, forMode: RunLoopMode.defaultRunLoopMode)
+        timer.isPaused = false
     }
     
     /**
      *  Stops the cloud autorotation animation.
      */
     func timerStop() {
-//        timer.invalidate()
-        timer = nil
+        timer.isPaused = true
     }
 
-    override public init(frame: CGRect) {
-        self.tags = []
-        self.coordinate = []
-        self.normalDirection = DBPoint(x: 0, y: 0, z: 0)
-        super.init(frame: frame)
-        
+    private func setup() {
         let gesture = UIPanGestureRecognizer(target: self, action: #selector(self.handlePanGesture))
         self.addGestureRecognizer(gesture)
+        
+        inertia = CADisplayLink(target: self, selector: #selector(inertiaStep))
+        inertia.add(to: .main, forMode: .defaultRunLoopMode)
+        
+        timer  = CADisplayLink(target: self, selector: #selector(autoTurnRotation))
+        timer.add(to: .main, forMode: .defaultRunLoopMode)
+    }
+    
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
     }
 
     required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        setup()
     }
     
     // MARK: - set frame of point
     
     func updateFrameOfPoint(_ index: Int, direction: DBPoint, andAngle angle: CGFloat) {
-//        var value: NSValue = coordinate[index] as! NSValue
-//        var point: DBPoint = DBPoint(x: 0, y: 0, z: 0)
-//        value.getValue(&point)
-        let point: DBPoint = coordinate[index] as! DBPoint
+        let point: DBPoint = coordinate[index]
         
         let rPoint = DBPointMakeRotation(point: point, direction: direction, angle: angle)
         coordinate[index] = rPoint
@@ -114,7 +113,7 @@ open class DBSphereView: UIView, UIGestureRecognizerDelegate {
     }
     
     func setTagOf(_ point: DBPoint, andIndex index: Int) {
-        let view: UIView = tags[index] as! UIView
+        let view: UIView = tags[index]
         view.center = CGPoint(x: (point.x + 1) * (self.frame.size.width / 2.0), y: (point.y + 1) * self.frame.size.width / 2.0)
         
         let transform: CGFloat = (point.z + 2) / 3
@@ -140,15 +139,13 @@ open class DBSphereView: UIView, UIGestureRecognizerDelegate {
     // MARK: - inertia
     
     func inertiaStart() {
-        self.timerStop()
-        inertia = CADisplayLink(target: self, selector: #selector(self.inertiaStep))
-        inertia.add(to: RunLoop.main, forMode: RunLoopMode.defaultRunLoopMode)
+        timerStop()
+        inertia.isPaused = false
     }
     
     func inertiaStop() {
-//        inertia.invalidate()
-        inertia = nil
-        self.timerStart()
+        timerStart()
+        inertia.isPaused = true
     }
     
     @objc func inertiaStep() {
@@ -190,4 +187,56 @@ open class DBSphereView: UIView, UIGestureRecognizerDelegate {
         }
         
     }
+}
+
+extension DBSphereView {
+    fileprivate func DBPointMakeRotation(point: DBPoint, direction: DBPoint, angle: CGFloat) -> DBPoint {
+        if angle == 0 {
+            return point
+        }
+        
+        let temp2: [[Double]] = [[Double(point.x), Double(point.y), Double(point.z), 1], [0,0,0,0], [0,0,0,0], [0,0,0,0]]
+        
+        var result: Matrix = Matrix(temp2)
+        if direction.z * direction.z + direction.y * direction.y != 0 {
+            let cos1: Double = Double(direction.z / sqrt(direction.z * direction.z + direction.y * direction.y))
+            let sin1: Double = Double(direction.y / sqrt(direction.z * direction.z + direction.y * direction.y))
+            let t1 = [[1, 0, 0, 0], [0, cos1, sin1, 0], [0, -sin1, cos1, 0], [0, 0, 0, 1]]
+            result *= Matrix(t1)
+        }
+        
+        if direction.x * direction.x + direction.y * direction.y + direction.z * direction.z != 0 {
+            let cos2: CGFloat = sqrt(direction.y * direction.y + direction.z * direction.z) / sqrt(direction.x * direction.x + direction.y * direction.y + direction.z * direction.z)
+            let sin2: CGFloat = -direction.x / sqrt(direction.x * direction.x + direction.y * direction.y + direction.z * direction.z)
+            let t2 = [[Double(cos2), 0, Double(-sin2), 0], [0, 1, 0, 0], [Double(sin2), 0, Double(cos2), 0], [0, 0, 0, 1]]
+            
+            result *= Matrix(t2)
+        }
+        
+        let cos3 = Double(cos(angle))
+        let sin3 = Double(sin(angle))
+        let t3 = [[cos3, sin3, 0, 0], [-sin3, cos3, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+        result *= Matrix(t3)
+        
+        if direction.x * direction.x + direction.y * direction.y + direction.z * direction.z != 0 {
+            let cos2: CGFloat = sqrt(direction.y * direction.y + direction.z * direction.z) / sqrt(direction.x * direction.x + direction.y * direction.y + direction.z * direction.z)
+            let sin2: CGFloat = -direction.x / sqrt(direction.x * direction.x + direction.y * direction.y + direction.z * direction.z)
+            let t2_ = [[Double(cos2), 0, Double(sin2), 0], [0, 1, 0, 0], [Double(-sin2), 0, Double(cos2), 0], [0, 0, 0, 1]]
+            
+            result *= Matrix(t2_)
+        }
+        
+        if direction.z * direction.z + direction.y * direction.y != 0 {
+            let cos1: CGFloat = direction.z / sqrt(direction.z * direction.z + direction.y * direction.y)
+            let sin1: CGFloat = direction.y / sqrt(direction.z * direction.z + direction.y * direction.y)
+            let t1_ = [[1, 0, 0, 0], [0, Double(cos1), Double(-sin1), 0], [0, Double(sin1), Double(cos1), 0], [0, 0, 0, 1]]
+            
+            result *= Matrix(t1_)
+        }
+        
+        let resultPoint = DBPoint(x: CGFloat(result[0,0]), y: CGFloat(result[0,1]), z: CGFloat(result[0,2]))
+        
+        return resultPoint
+    }
+
 }

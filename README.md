@@ -19,7 +19,9 @@ You can customize the code easily because the code is simple.
 
 ## Installation
 
-```pod "DBSphereTagCloud"```
+```
+use_frameworks!
+```
 
 ## Usage
 ```Swift

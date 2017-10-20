@@ -7,35 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		736046671F97A69F00D50714 /* MatrixInverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736046661F97A69F00D50714 /* MatrixInverse.swift */; };
+		737C0E971F9A4E8D002D154E /* MatrixCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737C0E961F9A4E8D002D154E /* MatrixCreation.swift */; };
+		737C0E991F9A4E9F002D154E /* MatrixConcatenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737C0E981F9A4E9F002D154E /* MatrixConcatenation.swift */; };
 		7398776E1F96471A006DC997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398776D1F96471A006DC997 /* AppDelegate.swift */; };
 		739877701F96471A006DC997 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398776F1F96471A006DC997 /* ViewController.swift */; };
 		739877731F96471A006DC997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739877711F96471A006DC997 /* Main.storyboard */; };
 		739877751F96471A006DC997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 739877741F96471A006DC997 /* Assets.xcassets */; };
 		739877781F96471A006DC997 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739877761F96471A006DC997 /* LaunchScreen.storyboard */; };
 		739877841F9647F9006DC997 /* DBSphereView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877811F9647F9006DC997 /* DBSphereView.swift */; };
-		739877851F9647F9006DC997 /* DBMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877821F9647F9006DC997 /* DBMatrix.swift */; };
 		739877BC1F97A235006DC997 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877921F97A235006DC997 /* Matrix.swift */; };
-		739877BD1F97A235006DC997 /* MatrixAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877931F97A235006DC997 /* MatrixAddition.swift */; };
-		739877BE1F97A235006DC997 /* MatrixComponentWiseFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877941F97A235006DC997 /* MatrixComponentWiseFunction.swift */; };
-		739877BF1F97A235006DC997 /* MatrixConcatenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877951F97A235006DC997 /* MatrixConcatenation.swift */; };
-		739877C01F97A235006DC997 /* MatrixCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877961F97A235006DC997 /* MatrixCreation.swift */; };
-		739877C11F97A235006DC997 /* MatrixCustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877971F97A235006DC997 /* MatrixCustomStringConvertible.swift */; };
-		739877C21F97A235006DC997 /* MatrixDivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877981F97A235006DC997 /* MatrixDivision.swift */; };
-		739877C31F97A235006DC997 /* MatrixEquatableComparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877991F97A235006DC997 /* MatrixEquatableComparable.swift */; };
-		739877C51F97A235006DC997 /* MatrixIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398779B1F97A235006DC997 /* MatrixIO.swift */; };
-		739877C61F97A235006DC997 /* MatrixMisc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398779C1F97A235006DC997 /* MatrixMisc.swift */; };
 		739877C71F97A235006DC997 /* MatrixMultiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398779D1F97A235006DC997 /* MatrixMultiplication.swift */; };
-		739877C81F97A235006DC997 /* MatrixRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398779E1F97A235006DC997 /* MatrixRandom.swift */; };
-		739877C91F97A235006DC997 /* MatrixRowsAndColumns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398779F1F97A235006DC997 /* MatrixRowsAndColumns.swift */; };
 		739877CA1F97A235006DC997 /* MatrixSubscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877A01F97A235006DC997 /* MatrixSubscripting.swift */; };
-		739877CB1F97A235006DC997 /* MatrixSubtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877A11F97A235006DC997 /* MatrixSubtraction.swift */; };
-		739877CC1F97A235006DC997 /* MatrixSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877A21F97A235006DC997 /* MatrixSum.swift */; };
-		739877CD1F97A235006DC997 /* MatrixTransposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877A31F97A235006DC997 /* MatrixTransposition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		736046661F97A69F00D50714 /* MatrixInverse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixInverse.swift; sourceTree = "<group>"; };
+		737C0E961F9A4E8D002D154E /* MatrixCreation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixCreation.swift; sourceTree = "<group>"; };
+		737C0E981F9A4E9F002D154E /* MatrixConcatenation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixConcatenation.swift; sourceTree = "<group>"; };
 		7398776A1F96471A006DC997 /* DBSphereTagCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBSphereTagCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7398776D1F96471A006DC997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7398776F1F96471A006DC997 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,24 +31,9 @@
 		739877771F96471A006DC997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		739877791F96471A006DC997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		739877811F9647F9006DC997 /* DBSphereView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBSphereView.swift; path = ../../Sources/DBSphereView.swift; sourceTree = "<group>"; };
-		739877821F9647F9006DC997 /* DBMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBMatrix.swift; path = ../../Sources/DBMatrix.swift; sourceTree = "<group>"; };
 		739877921F97A235006DC997 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
-		739877931F97A235006DC997 /* MatrixAddition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixAddition.swift; sourceTree = "<group>"; };
-		739877941F97A235006DC997 /* MatrixComponentWiseFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixComponentWiseFunction.swift; sourceTree = "<group>"; };
-		739877951F97A235006DC997 /* MatrixConcatenation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixConcatenation.swift; sourceTree = "<group>"; };
-		739877961F97A235006DC997 /* MatrixCreation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixCreation.swift; sourceTree = "<group>"; };
-		739877971F97A235006DC997 /* MatrixCustomStringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixCustomStringConvertible.swift; sourceTree = "<group>"; };
-		739877981F97A235006DC997 /* MatrixDivision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixDivision.swift; sourceTree = "<group>"; };
-		739877991F97A235006DC997 /* MatrixEquatableComparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixEquatableComparable.swift; sourceTree = "<group>"; };
-		7398779B1F97A235006DC997 /* MatrixIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixIO.swift; sourceTree = "<group>"; };
-		7398779C1F97A235006DC997 /* MatrixMisc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixMisc.swift; sourceTree = "<group>"; };
 		7398779D1F97A235006DC997 /* MatrixMultiplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixMultiplication.swift; sourceTree = "<group>"; };
-		7398779E1F97A235006DC997 /* MatrixRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixRandom.swift; sourceTree = "<group>"; };
-		7398779F1F97A235006DC997 /* MatrixRowsAndColumns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixRowsAndColumns.swift; sourceTree = "<group>"; };
 		739877A01F97A235006DC997 /* MatrixSubscripting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixSubscripting.swift; sourceTree = "<group>"; };
-		739877A11F97A235006DC997 /* MatrixSubtraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixSubtraction.swift; sourceTree = "<group>"; };
-		739877A21F97A235006DC997 /* MatrixSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixSum.swift; sourceTree = "<group>"; };
-		739877A31F97A235006DC997 /* MatrixTransposition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixTransposition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +73,6 @@
 				739877741F96471A006DC997 /* Assets.xcassets */,
 				739877761F96471A006DC997 /* LaunchScreen.storyboard */,
 				739877791F96471A006DC997 /* Info.plist */,
-				739877821F9647F9006DC997 /* DBMatrix.swift */,
 				739877811F9647F9006DC997 /* DBSphereView.swift */,
 			);
 			path = DBSphereTagCloud;
@@ -128,23 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				739877921F97A235006DC997 /* Matrix.swift */,
-				739877931F97A235006DC997 /* MatrixAddition.swift */,
-				739877941F97A235006DC997 /* MatrixComponentWiseFunction.swift */,
-				739877951F97A235006DC997 /* MatrixConcatenation.swift */,
-				739877961F97A235006DC997 /* MatrixCreation.swift */,
-				739877971F97A235006DC997 /* MatrixCustomStringConvertible.swift */,
-				739877981F97A235006DC997 /* MatrixDivision.swift */,
-				739877991F97A235006DC997 /* MatrixEquatableComparable.swift */,
-				736046661F97A69F00D50714 /* MatrixInverse.swift */,
-				7398779B1F97A235006DC997 /* MatrixIO.swift */,
-				7398779C1F97A235006DC997 /* MatrixMisc.swift */,
+				737C0E981F9A4E9F002D154E /* MatrixConcatenation.swift */,
+				737C0E961F9A4E8D002D154E /* MatrixCreation.swift */,
 				7398779D1F97A235006DC997 /* MatrixMultiplication.swift */,
-				7398779E1F97A235006DC997 /* MatrixRandom.swift */,
-				7398779F1F97A235006DC997 /* MatrixRowsAndColumns.swift */,
 				739877A01F97A235006DC997 /* MatrixSubscripting.swift */,
-				739877A11F97A235006DC997 /* MatrixSubtraction.swift */,
-				739877A21F97A235006DC997 /* MatrixSum.swift */,
-				739877A31F97A235006DC997 /* MatrixTransposition.swift */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
@@ -221,28 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				739877C31F97A235006DC997 /* MatrixEquatableComparable.swift in Sources */,
-				739877CD1F97A235006DC997 /* MatrixTransposition.swift in Sources */,
-				739877C01F97A235006DC997 /* MatrixCreation.swift in Sources */,
 				739877CA1F97A235006DC997 /* MatrixSubscripting.swift in Sources */,
-				739877BD1F97A235006DC997 /* MatrixAddition.swift in Sources */,
-				739877C61F97A235006DC997 /* MatrixMisc.swift in Sources */,
-				739877BE1F97A235006DC997 /* MatrixComponentWiseFunction.swift in Sources */,
-				739877851F9647F9006DC997 /* DBMatrix.swift in Sources */,
-				739877BF1F97A235006DC997 /* MatrixConcatenation.swift in Sources */,
+				737C0E971F9A4E8D002D154E /* MatrixCreation.swift in Sources */,
 				739877841F9647F9006DC997 /* DBSphereView.swift in Sources */,
 				739877701F96471A006DC997 /* ViewController.swift in Sources */,
-				736046671F97A69F00D50714 /* MatrixInverse.swift in Sources */,
 				739877BC1F97A235006DC997 /* Matrix.swift in Sources */,
-				739877CC1F97A235006DC997 /* MatrixSum.swift in Sources */,
-				739877C81F97A235006DC997 /* MatrixRandom.swift in Sources */,
 				7398776E1F96471A006DC997 /* AppDelegate.swift in Sources */,
-				739877C11F97A235006DC997 /* MatrixCustomStringConvertible.swift in Sources */,
 				739877C71F97A235006DC997 /* MatrixMultiplication.swift in Sources */,
-				739877CB1F97A235006DC997 /* MatrixSubtraction.swift in Sources */,
-				739877C21F97A235006DC997 /* MatrixDivision.swift in Sources */,
-				739877C91F97A235006DC997 /* MatrixRowsAndColumns.swift in Sources */,
-				739877C51F97A235006DC997 /* MatrixIO.swift in Sources */,
+				737C0E991F9A4E9F002D154E /* MatrixConcatenation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

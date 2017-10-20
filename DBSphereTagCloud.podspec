@@ -61,7 +61,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "6.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -74,7 +74,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/dongxinb/DBSphereTagCloud.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/apparition47/DBSphereTagCloud.git", :branch => "swift", :submodules => true }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -85,7 +85,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files = "DBSphereTagCloud/*"
+  s.source_files = '**/{Matrix,MatrixConcatenation,MatrixCreation,MatrixMultiplication,MatrixSubscripting,DBSphereView}*.swift'
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -111,7 +111,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit' 
+  s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit', 'Accelerate'
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
