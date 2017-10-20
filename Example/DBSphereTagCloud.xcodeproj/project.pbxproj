@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		736046671F97A69F00D50714 /* MatrixInverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736046661F97A69F00D50714 /* MatrixInverse.swift */; };
+		7398776E1F96471A006DC997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398776D1F96471A006DC997 /* AppDelegate.swift */; };
+		739877701F96471A006DC997 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398776F1F96471A006DC997 /* ViewController.swift */; };
+		739877731F96471A006DC997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739877711F96471A006DC997 /* Main.storyboard */; };
+		739877751F96471A006DC997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 739877741F96471A006DC997 /* Assets.xcassets */; };
+		739877781F96471A006DC997 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739877761F96471A006DC997 /* LaunchScreen.storyboard */; };
+		739877841F9647F9006DC997 /* DBSphereView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877811F9647F9006DC997 /* DBSphereView.swift */; };
+		739877851F9647F9006DC997 /* DBMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877821F9647F9006DC997 /* DBMatrix.swift */; };
+		739877BC1F97A235006DC997 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877921F97A235006DC997 /* Matrix.swift */; };
+		739877BD1F97A235006DC997 /* MatrixAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877931F97A235006DC997 /* MatrixAddition.swift */; };
+		739877BE1F97A235006DC997 /* MatrixComponentWiseFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877941F97A235006DC997 /* MatrixComponentWiseFunction.swift */; };
+		739877BF1F97A235006DC997 /* MatrixConcatenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877951F97A235006DC997 /* MatrixConcatenation.swift */; };
+		739877C01F97A235006DC997 /* MatrixCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877961F97A235006DC997 /* MatrixCreation.swift */; };
+		739877C11F97A235006DC997 /* MatrixCustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877971F97A235006DC997 /* MatrixCustomStringConvertible.swift */; };
+		739877C21F97A235006DC997 /* MatrixDivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877981F97A235006DC997 /* MatrixDivision.swift */; };
+		739877C31F97A235006DC997 /* MatrixEquatableComparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877991F97A235006DC997 /* MatrixEquatableComparable.swift */; };
+		739877C51F97A235006DC997 /* MatrixIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398779B1F97A235006DC997 /* MatrixIO.swift */; };
+		739877C61F97A235006DC997 /* MatrixMisc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398779C1F97A235006DC997 /* MatrixMisc.swift */; };
+		739877C71F97A235006DC997 /* MatrixMultiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398779D1F97A235006DC997 /* MatrixMultiplication.swift */; };
+		739877C81F97A235006DC997 /* MatrixRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398779E1F97A235006DC997 /* MatrixRandom.swift */; };
+		739877C91F97A235006DC997 /* MatrixRowsAndColumns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398779F1F97A235006DC997 /* MatrixRowsAndColumns.swift */; };
+		739877CA1F97A235006DC997 /* MatrixSubscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877A01F97A235006DC997 /* MatrixSubscripting.swift */; };
+		739877CB1F97A235006DC997 /* MatrixSubtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877A11F97A235006DC997 /* MatrixSubtraction.swift */; };
+		739877CC1F97A235006DC997 /* MatrixSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877A21F97A235006DC997 /* MatrixSum.swift */; };
+		739877CD1F97A235006DC997 /* MatrixTransposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877A31F97A235006DC997 /* MatrixTransposition.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		736046661F97A69F00D50714 /* MatrixInverse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixInverse.swift; sourceTree = "<group>"; };
+		7398776A1F96471A006DC997 /* DBSphereTagCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBSphereTagCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7398776D1F96471A006DC997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7398776F1F96471A006DC997 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		739877721F96471A006DC997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		739877741F96471A006DC997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		739877771F96471A006DC997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		739877791F96471A006DC997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		739877811F9647F9006DC997 /* DBSphereView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBSphereView.swift; path = ../../Sources/DBSphereView.swift; sourceTree = "<group>"; };
+		739877821F9647F9006DC997 /* DBMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBMatrix.swift; path = ../../Sources/DBMatrix.swift; sourceTree = "<group>"; };
+		739877921F97A235006DC997 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		739877931F97A235006DC997 /* MatrixAddition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixAddition.swift; sourceTree = "<group>"; };
+		739877941F97A235006DC997 /* MatrixComponentWiseFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixComponentWiseFunction.swift; sourceTree = "<group>"; };
+		739877951F97A235006DC997 /* MatrixConcatenation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixConcatenation.swift; sourceTree = "<group>"; };
+		739877961F97A235006DC997 /* MatrixCreation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixCreation.swift; sourceTree = "<group>"; };
+		739877971F97A235006DC997 /* MatrixCustomStringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixCustomStringConvertible.swift; sourceTree = "<group>"; };
+		739877981F97A235006DC997 /* MatrixDivision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixDivision.swift; sourceTree = "<group>"; };
+		739877991F97A235006DC997 /* MatrixEquatableComparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixEquatableComparable.swift; sourceTree = "<group>"; };
+		7398779B1F97A235006DC997 /* MatrixIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixIO.swift; sourceTree = "<group>"; };
+		7398779C1F97A235006DC997 /* MatrixMisc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixMisc.swift; sourceTree = "<group>"; };
+		7398779D1F97A235006DC997 /* MatrixMultiplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixMultiplication.swift; sourceTree = "<group>"; };
+		7398779E1F97A235006DC997 /* MatrixRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixRandom.swift; sourceTree = "<group>"; };
+		7398779F1F97A235006DC997 /* MatrixRowsAndColumns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixRowsAndColumns.swift; sourceTree = "<group>"; };
+		739877A01F97A235006DC997 /* MatrixSubscripting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixSubscripting.swift; sourceTree = "<group>"; };
+		739877A11F97A235006DC997 /* MatrixSubtraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixSubtraction.swift; sourceTree = "<group>"; };
+		739877A21F97A235006DC997 /* MatrixSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixSum.swift; sourceTree = "<group>"; };
+		739877A31F97A235006DC997 /* MatrixTransposition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixTransposition.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		739877671F96471A006DC997 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		739877611F96471A006DC997 = {
+			isa = PBXGroup;
+			children = (
+				739877891F97A235006DC997 /* SwiftNum */,
+				7398776C1F96471A006DC997 /* DBSphereTagCloud */,
+				7398776B1F96471A006DC997 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7398776B1F96471A006DC997 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7398776A1F96471A006DC997 /* DBSphereTagCloud.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7398776C1F96471A006DC997 /* DBSphereTagCloud */ = {
+			isa = PBXGroup;
+			children = (
+				7398776D1F96471A006DC997 /* AppDelegate.swift */,
+				7398776F1F96471A006DC997 /* ViewController.swift */,
+				739877711F96471A006DC997 /* Main.storyboard */,
+				739877741F96471A006DC997 /* Assets.xcassets */,
+				739877761F96471A006DC997 /* LaunchScreen.storyboard */,
+				739877791F96471A006DC997 /* Info.plist */,
+				739877821F9647F9006DC997 /* DBMatrix.swift */,
+				739877811F9647F9006DC997 /* DBSphereView.swift */,
+			);
+			path = DBSphereTagCloud;
+			sourceTree = "<group>";
+		};
+		739877891F97A235006DC997 /* SwiftNum */ = {
+			isa = PBXGroup;
+			children = (
+				7398778E1F97A235006DC997 /* Sources */,
+			);
+			name = SwiftNum;
+			path = ../SwiftNum;
+			sourceTree = "<group>";
+		};
+		7398778E1F97A235006DC997 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				739877911F97A235006DC997 /* Linear */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		739877911F97A235006DC997 /* Linear */ = {
+			isa = PBXGroup;
+			children = (
+				739877921F97A235006DC997 /* Matrix.swift */,
+				739877931F97A235006DC997 /* MatrixAddition.swift */,
+				739877941F97A235006DC997 /* MatrixComponentWiseFunction.swift */,
+				739877951F97A235006DC997 /* MatrixConcatenation.swift */,
+				739877961F97A235006DC997 /* MatrixCreation.swift */,
+				739877971F97A235006DC997 /* MatrixCustomStringConvertible.swift */,
+				739877981F97A235006DC997 /* MatrixDivision.swift */,
+				739877991F97A235006DC997 /* MatrixEquatableComparable.swift */,
+				736046661F97A69F00D50714 /* MatrixInverse.swift */,
+				7398779B1F97A235006DC997 /* MatrixIO.swift */,
+				7398779C1F97A235006DC997 /* MatrixMisc.swift */,
+				7398779D1F97A235006DC997 /* MatrixMultiplication.swift */,
+				7398779E1F97A235006DC997 /* MatrixRandom.swift */,
+				7398779F1F97A235006DC997 /* MatrixRowsAndColumns.swift */,
+				739877A01F97A235006DC997 /* MatrixSubscripting.swift */,
+				739877A11F97A235006DC997 /* MatrixSubtraction.swift */,
+				739877A21F97A235006DC997 /* MatrixSum.swift */,
+				739877A31F97A235006DC997 /* MatrixTransposition.swift */,
+			);
+			path = Linear;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		739877691F96471A006DC997 /* DBSphereTagCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7398777C1F96471A006DC997 /* Build configuration list for PBXNativeTarget "DBSphereTagCloud" */;
+			buildPhases = (
+				739877661F96471A006DC997 /* Sources */,
+				739877671F96471A006DC997 /* Frameworks */,
+				739877681F96471A006DC997 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DBSphereTagCloud;
+			productName = DBSphereTagCloud;
+			productReference = 7398776A1F96471A006DC997 /* DBSphereTagCloud.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		739877621F96471A006DC997 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Aaron Lee";
+				TargetAttributes = {
+					739877691F96471A006DC997 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 739877651F96471A006DC997 /* Build configuration list for PBXProject "DBSphereTagCloud" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 739877611F96471A006DC997;
+			productRefGroup = 7398776B1F96471A006DC997 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				739877691F96471A006DC997 /* DBSphereTagCloud */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		739877681F96471A006DC997 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739877781F96471A006DC997 /* LaunchScreen.storyboard in Resources */,
+				739877751F96471A006DC997 /* Assets.xcassets in Resources */,
+				739877731F96471A006DC997 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		739877661F96471A006DC997 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739877C31F97A235006DC997 /* MatrixEquatableComparable.swift in Sources */,
+				739877CD1F97A235006DC997 /* MatrixTransposition.swift in Sources */,
+				739877C01F97A235006DC997 /* MatrixCreation.swift in Sources */,
+				739877CA1F97A235006DC997 /* MatrixSubscripting.swift in Sources */,
+				739877BD1F97A235006DC997 /* MatrixAddition.swift in Sources */,
+				739877C61F97A235006DC997 /* MatrixMisc.swift in Sources */,
+				739877BE1F97A235006DC997 /* MatrixComponentWiseFunction.swift in Sources */,
+				739877851F9647F9006DC997 /* DBMatrix.swift in Sources */,
+				739877BF1F97A235006DC997 /* MatrixConcatenation.swift in Sources */,
+				739877841F9647F9006DC997 /* DBSphereView.swift in Sources */,
+				739877701F96471A006DC997 /* ViewController.swift in Sources */,
+				736046671F97A69F00D50714 /* MatrixInverse.swift in Sources */,
+				739877BC1F97A235006DC997 /* Matrix.swift in Sources */,
+				739877CC1F97A235006DC997 /* MatrixSum.swift in Sources */,
+				739877C81F97A235006DC997 /* MatrixRandom.swift in Sources */,
+				7398776E1F96471A006DC997 /* AppDelegate.swift in Sources */,
+				739877C11F97A235006DC997 /* MatrixCustomStringConvertible.swift in Sources */,
+				739877C71F97A235006DC997 /* MatrixMultiplication.swift in Sources */,
+				739877CB1F97A235006DC997 /* MatrixSubtraction.swift in Sources */,
+				739877C21F97A235006DC997 /* MatrixDivision.swift in Sources */,
+				739877C91F97A235006DC997 /* MatrixRowsAndColumns.swift in Sources */,
+				739877C51F97A235006DC997 /* MatrixIO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		739877711F96471A006DC997 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				739877721F96471A006DC997 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		739877761F96471A006DC997 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				739877771F96471A006DC997 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7398777A1F96471A006DC997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7398777B1F96471A006DC997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7398777D1F96471A006DC997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DBSphereTagCloud/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onefatgiraffe.DBSphereTagCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7398777E1F96471A006DC997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DBSphereTagCloud/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onefatgiraffe.DBSphereTagCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		739877651F96471A006DC997 /* Build configuration list for PBXProject "DBSphereTagCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7398777A1F96471A006DC997 /* Debug */,
+				7398777B1F96471A006DC997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7398777C1F96471A006DC997 /* Build configuration list for PBXNativeTarget "DBSphereTagCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7398777D1F96471A006DC997 /* Debug */,
+				7398777E1F96471A006DC997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 739877621F96471A006DC997 /* Project object */;
+}

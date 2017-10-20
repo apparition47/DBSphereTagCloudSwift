@@ -1,0 +1,3 @@
+[submodule "SwiftNum"]
+	path = SwiftNum
+	url = https://github.com/donald-pinckney/SwiftNum.git
