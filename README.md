@@ -1,13 +1,7 @@
-DBSphereTagCloud
+DBSphereTagCloudSwift
 ================
 
-A 3D spherical tag cloud view of iOS.
-
-## Introduction
-
-DBSphereTagCloud is a 3D spherical tag cloud view using UIKit and Accelerate (provided by [SwiftNum](https://github.com/donald-pinckney/SwiftNum)).
-
-You can customize the code easily because the code is simple.
+A 3D spherical tag cloud view for iOS using UIKit and Accelerate (provided by [SwiftNum](https://github.com/donald-pinckney/SwiftNum)). Ported from the original [Objective-C version written by @dongxinb](https://github.com/dongxinb/DBSphereTagCloud).
 
 ![DBSphereTagCloud](https://raw.githubusercontent.com/apparition47/DBSphereTagCloud/master/SCREENSHOT.gif)
 
@@ -48,4 +42,4 @@ end
 
 ## License
 
-Under MIT License.
+MIT License.
