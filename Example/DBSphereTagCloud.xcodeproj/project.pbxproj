@@ -18,7 +18,42 @@
 		739877BC1F97A235006DC997 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877921F97A235006DC997 /* Matrix.swift */; };
 		739877C71F97A235006DC997 /* MatrixMultiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398779D1F97A235006DC997 /* MatrixMultiplication.swift */; };
 		739877CA1F97A235006DC997 /* MatrixSubscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877A01F97A235006DC997 /* MatrixSubscripting.swift */; };
+		73B8E4831F9B9E1F009903C9 /* DBSphereTagCloud_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 73B8E4811F9B9E1F009903C9 /* DBSphereTagCloud_Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73B8E4861F9B9E1F009903C9 /* DBSphereTagCloud_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B8E47F1F9B9E1F009903C9 /* DBSphereTagCloud_Framework.framework */; };
+		73B8E4871F9B9E1F009903C9 /* DBSphereTagCloud_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 73B8E47F1F9B9E1F009903C9 /* DBSphereTagCloud_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		73B8E48C1F9B9E2F009903C9 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877921F97A235006DC997 /* Matrix.swift */; };
+		73B8E48D1F9B9E2F009903C9 /* MatrixConcatenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737C0E981F9A4E9F002D154E /* MatrixConcatenation.swift */; };
+		73B8E48E1F9B9E2F009903C9 /* MatrixCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737C0E961F9A4E8D002D154E /* MatrixCreation.swift */; };
+		73B8E48F1F9B9E2F009903C9 /* MatrixMultiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398779D1F97A235006DC997 /* MatrixMultiplication.swift */; };
+		73B8E4901F9B9E2F009903C9 /* MatrixSubscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877A01F97A235006DC997 /* MatrixSubscripting.swift */; };
+		73B8E4911F9B9E2F009903C9 /* DBSphereView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877811F9647F9006DC997 /* DBSphereView.swift */; };
+		73B8E4941F9B9E3E009903C9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B8E4931F9B9E3B009903C9 /* Accelerate.framework */; };
+		73B8E4961F9B9E4B009903C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B8E4951F9B9E46009903C9 /* UIKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73B8E4841F9B9E1F009903C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 739877621F96471A006DC997 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73B8E47E1F9B9E1F009903C9;
+			remoteInfo = "DBSphereTagCloud-Framework";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		73B8E48B1F9B9E1F009903C9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				73B8E4871F9B9E1F009903C9 /* DBSphereTagCloud_Framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		737C0E961F9A4E8D002D154E /* MatrixCreation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixCreation.swift; sourceTree = "<group>"; };
@@ -34,6 +69,11 @@
 		739877921F97A235006DC997 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		7398779D1F97A235006DC997 /* MatrixMultiplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixMultiplication.swift; sourceTree = "<group>"; };
 		739877A01F97A235006DC997 /* MatrixSubscripting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixSubscripting.swift; sourceTree = "<group>"; };
+		73B8E47F1F9B9E1F009903C9 /* DBSphereTagCloud_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DBSphereTagCloud_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73B8E4811F9B9E1F009903C9 /* DBSphereTagCloud_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBSphereTagCloud_Framework.h; sourceTree = "<group>"; };
+		73B8E4821F9B9E1F009903C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73B8E4931F9B9E3B009903C9 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		73B8E4951F9B9E46009903C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +81,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73B8E4861F9B9E1F009903C9 /* DBSphereTagCloud_Framework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73B8E47B1F9B9E1F009903C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73B8E4961F9B9E4B009903C9 /* UIKit.framework in Frameworks */,
+				73B8E4941F9B9E3E009903C9 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +102,9 @@
 			children = (
 				739877891F97A235006DC997 /* SwiftNum */,
 				7398776C1F96471A006DC997 /* DBSphereTagCloud */,
+				73B8E4801F9B9E1F009903C9 /* DBSphereTagCloud-Framework */,
 				7398776B1F96471A006DC997 /* Products */,
+				73B8E4921F9B9E3B009903C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				7398776A1F96471A006DC997 /* DBSphereTagCloud.app */,
+				73B8E47F1F9B9E1F009903C9 /* DBSphereTagCloud_Framework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,7 +160,36 @@
 			path = Linear;
 			sourceTree = "<group>";
 		};
+		73B8E4801F9B9E1F009903C9 /* DBSphereTagCloud-Framework */ = {
+			isa = PBXGroup;
+			children = (
+				73B8E4811F9B9E1F009903C9 /* DBSphereTagCloud_Framework.h */,
+				73B8E4821F9B9E1F009903C9 /* Info.plist */,
+			);
+			path = "DBSphereTagCloud-Framework";
+			sourceTree = "<group>";
+		};
+		73B8E4921F9B9E3B009903C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73B8E4951F9B9E46009903C9 /* UIKit.framework */,
+				73B8E4931F9B9E3B009903C9 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		73B8E47C1F9B9E1F009903C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73B8E4831F9B9E1F009903C9 /* DBSphereTagCloud_Framework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		739877691F96471A006DC997 /* DBSphereTagCloud */ = {
@@ -117,15 +199,35 @@
 				739877661F96471A006DC997 /* Sources */,
 				739877671F96471A006DC997 /* Frameworks */,
 				739877681F96471A006DC997 /* Resources */,
+				73B8E48B1F9B9E1F009903C9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				73B8E4851F9B9E1F009903C9 /* PBXTargetDependency */,
 			);
 			name = DBSphereTagCloud;
 			productName = DBSphereTagCloud;
 			productReference = 7398776A1F96471A006DC997 /* DBSphereTagCloud.app */;
 			productType = "com.apple.product-type.application";
+		};
+		73B8E47E1F9B9E1F009903C9 /* DBSphereTagCloud-Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73B8E48A1F9B9E1F009903C9 /* Build configuration list for PBXNativeTarget "DBSphereTagCloud-Framework" */;
+			buildPhases = (
+				73B8E47A1F9B9E1F009903C9 /* Sources */,
+				73B8E47B1F9B9E1F009903C9 /* Frameworks */,
+				73B8E47C1F9B9E1F009903C9 /* Headers */,
+				73B8E47D1F9B9E1F009903C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DBSphereTagCloud-Framework";
+			productName = "DBSphereTagCloud-Framework";
+			productReference = 73B8E47F1F9B9E1F009903C9 /* DBSphereTagCloud_Framework.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -138,6 +240,10 @@
 				ORGANIZATIONNAME = "Aaron Lee";
 				TargetAttributes = {
 					739877691F96471A006DC997 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					73B8E47E1F9B9E1F009903C9 = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -157,6 +263,7 @@
 			projectRoot = "";
 			targets = (
 				739877691F96471A006DC997 /* DBSphereTagCloud */,
+				73B8E47E1F9B9E1F009903C9 /* DBSphereTagCloud-Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -169,6 +276,13 @@
 				739877781F96471A006DC997 /* LaunchScreen.storyboard in Resources */,
 				739877751F96471A006DC997 /* Assets.xcassets in Resources */,
 				739877731F96471A006DC997 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73B8E47D1F9B9E1F009903C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +304,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		73B8E47A1F9B9E1F009903C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73B8E48C1F9B9E2F009903C9 /* Matrix.swift in Sources */,
+				73B8E48D1F9B9E2F009903C9 /* MatrixConcatenation.swift in Sources */,
+				73B8E48E1F9B9E2F009903C9 /* MatrixCreation.swift in Sources */,
+				73B8E48F1F9B9E2F009903C9 /* MatrixMultiplication.swift in Sources */,
+				73B8E4901F9B9E2F009903C9 /* MatrixSubscripting.swift in Sources */,
+				73B8E4911F9B9E2F009903C9 /* DBSphereView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73B8E4851F9B9E1F009903C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73B8E47E1F9B9E1F009903C9 /* DBSphereTagCloud-Framework */;
+			targetProxy = 73B8E4841F9B9E1F009903C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		739877711F96471A006DC997 /* Main.storyboard */ = {
@@ -260,7 +395,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -311,7 +445,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -322,6 +455,7 @@
 		7398777D1F96471A006DC997 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DBSphereTagCloud/Info.plist;
@@ -336,6 +470,7 @@
 		7398777E1F96471A006DC997 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DBSphereTagCloud/Info.plist;
@@ -344,6 +479,54 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		73B8E4881F9B9E1F009903C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "DBSphereTagCloud-Framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onefatgiraffe.DBSphereTagCloud-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		73B8E4891F9B9E1F009903C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "DBSphereTagCloud-Framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onefatgiraffe.DBSphereTagCloud-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -364,6 +547,15 @@
 			buildConfigurations = (
 				7398777D1F96471A006DC997 /* Debug */,
 				7398777E1F96471A006DC997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73B8E48A1F9B9E1F009903C9 /* Build configuration list for PBXNativeTarget "DBSphereTagCloud-Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73B8E4881F9B9E1F009903C9 /* Debug */,
+				73B8E4891F9B9E1F009903C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

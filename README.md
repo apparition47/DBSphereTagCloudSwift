@@ -20,6 +20,8 @@ A 3D spherical tag cloud view for iOS using UIKit and Accelerate (provided by [S
 
 ## Installation
 
+### CocoaPods
+
 [CocoaPods](http://cocoapods.org/) is a dependency manager for Cocoa projects. You can install it with the following command:
 
 ```shell
@@ -37,6 +39,16 @@ target '<Your Target Name>' do
 end
 
 ```
+
+### Carthage
+
+[Carthage](https://github.com/Carthage/Carthage/) compatible.
+Add the following into your `Cartfile`, then run `carthage update`.
+
+```
+github "apparition47/DBSphereTagCloudSwift"
+```
+
 
 ## Usage
 ```Swift
