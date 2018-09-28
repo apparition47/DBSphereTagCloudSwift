@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DBSphereTagCloudSwift"
-  s.version      = "1.0.1"
+  s.version      = "2.0.1"
   s.summary      = "A 3D spherical tag cloud view of iOS."
 
   s.description  = <<-DESC
