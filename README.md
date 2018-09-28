@@ -35,7 +35,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'DBSphereTagCloudSwift', :git => "https://github.com/apparition47/DBSphereTagCloudSwift.git", :submodules => true
+    pod 'DBSphereTagCloudSwift'
 end
 
 ```

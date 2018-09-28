@@ -35,8 +35,7 @@ s.screenshots  = "https://user-images.githubusercontent.com/3298414/31832079-9be
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -49,9 +48,7 @@ s.screenshots  = "https://user-images.githubusercontent.com/3298414/31832079-9be
   #  profile URL.
   #
   
-  s.author             = { "Dong Xinbao" => "dongxinb@gmail.com" }
-  # Or just: s.author    = "Dong Xinbao"
-  # s.authors            = { "Dong Xinbao" => "dongxinb@gmail.com" }
+  s.authors             = { "Dong Xinbao" => "dongxinb@gmail.com", "Aaron Lee" => "aaron@onefatgiraffe.com" }
   # s.social_media_url   = "http://twitter.com/Dong Xinbao"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -74,7 +71,7 @@ s.screenshots  = "https://user-images.githubusercontent.com/3298414/31832079-9be
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/apparition47/DBSphereTagCloud.git", :tag => s.version, :submodules => true }
+  s.source       = { :git => "https://github.com/apparition47/DBSphereTagCloudSwift.git", :tag => s.version, :submodules => true }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -86,7 +83,6 @@ s.screenshots  = "https://user-images.githubusercontent.com/3298414/31832079-9be
   #
 
   s.source_files = '**/{Matrix,MatrixConcatenation,MatrixCreation,MatrixMultiplication,MatrixSubscripting,DBSphereView}.swift'
-
   # s.public_header_files = "Classes/**/*.h"
 
 
