@@ -85,10 +85,10 @@ open class DBSphereView: UIView, UIGestureRecognizerDelegate {
         self.addGestureRecognizer(gesture)
         
         inertia = CADisplayLink(target: self, selector: #selector(inertiaStep))
-        inertia.add(to: .main, forMode: .defaultRunLoopMode)
+        inertia.add(to: .main, forMode: RunLoop.Mode.default)
         
         timer  = CADisplayLink(target: self, selector: #selector(autoTurnRotation))
-        timer.add(to: .main, forMode: .defaultRunLoopMode)
+        timer.add(to: .main, forMode: RunLoop.Mode.default)
     }
     
     override public init(frame: CGRect) {

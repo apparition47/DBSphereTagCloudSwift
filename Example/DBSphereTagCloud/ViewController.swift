@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         var array = [UIButton]()
 
         for i in 1..<50 {
-            let btn = UIButton(type: UIButtonType.system)
+            let btn = UIButton(type: UIButton.ButtonType.system)
             btn.setTitle("\(i)", for: .normal)
             btn.setTitleColor(.darkGray, for: .normal)
             btn.titleLabel?.font = UIFont.systemFont(ofSize: 24, weight: UIFont.Weight.light)
