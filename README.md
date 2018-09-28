@@ -1,6 +1,6 @@
 DBSphereTagCloudSwift
 ================
-![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg) [![CocoaPods](https://img.shields.io/cocoapods/v/DBSphereTagCloudSwift.svg)](https://cocoapods.org/pods/DBSphereTagCloudSwift)
 
 A 3D spherical tag cloud view for iOS using UIKit and Accelerate (provided by [SwiftNum](https://github.com/donald-pinckney/SwiftNum)). Ported from the original [Objective-C version written by @dongxinb](https://github.com/dongxinb/DBSphereTagCloud).
 
@@ -52,7 +52,7 @@ github "apparition47/DBSphereTagCloudSwift"
 
 ## Usage
 ```Swift
-  import DBSphereTagCloud
+  import DBSphereTagCloudSwift
 
   let view: DBSphereView = DBSphereView(frame: CGRectMake(0, 100, 320, 320))
   view.setCloudTags(buttonArray)
