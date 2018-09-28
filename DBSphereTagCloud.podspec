@@ -74,7 +74,7 @@ s.screenshots  = "https://user-images.githubusercontent.com/3298414/31832079-9be
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/apparition47/DBSphereTagCloud.git", :branch => "swift", :submodules => true }
+  s.source       = { :git => "https://github.com/apparition47/DBSphereTagCloud.git", :tag => s.version, :submodules => true }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
