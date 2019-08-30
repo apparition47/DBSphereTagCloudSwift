@@ -69,14 +69,14 @@ open class DBSphereView: UIView, UIGestureRecognizerDelegate {
     /**
      *  Starts the cloud autorotation animation.
      */
-    func timerStart() {
+    public func timerStart() {
         timer.isPaused = false
     }
     
     /**
      *  Stops the cloud autorotation animation.
      */
-    func timerStop() {
+    public func timerStop() {
         timer.isPaused = true
     }
 
