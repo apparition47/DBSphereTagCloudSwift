@@ -15,8 +15,8 @@ A 3D spherical tag cloud view for iOS using UIKit and Accelerate (provided by [S
 ## Requirements
 
 * iOS 8+
-* Swift 4
-* Xcode 9
+* Swift 5
+* Xcode 12
 
 ## Installation
 
@@ -48,6 +48,10 @@ Add the following into your `Cartfile`, then run `carthage update`.
 ```
 github "apparition47/DBSphereTagCloudSwift"
 ```
+
+### Swift Package Manager
+
+Add `https://github.com/apparition47/DBSphereTagCloudSwift.git` to your project. Recommended adding with `Version` with `up to next major`.
 
 
 ## Usage
