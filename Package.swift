@@ -12,7 +12,7 @@ let package = Package(
             targets: ["DBSphereTagCloudSwift"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/donald-pinckney/SwiftNum", .upToNextMajor(from: "1.9.9"))
+        .package(url: "https://github.com/apparition47/SwiftNum", .branch(name: "tools"))
     ],
     targets: [
         .target(
