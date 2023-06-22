@@ -7,26 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		713631872A447838000C9334 /* MatrixComponentWiseFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713631752A447838000C9334 /* MatrixComponentWiseFunction.swift */; };
+		713631882A447838000C9334 /* MatrixSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713631762A447838000C9334 /* MatrixSum.swift */; };
+		713631892A447838000C9334 /* MatrixIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713631772A447838000C9334 /* MatrixIO.swift */; };
+		7136318A2A447838000C9334 /* MatrixMisc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713631782A447838000C9334 /* MatrixMisc.swift */; };
+		7136318B2A447838000C9334 /* MatrixRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713631792A447838000C9334 /* MatrixRandom.swift */; };
+		7136318C2A447838000C9334 /* MatrixAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7136317A2A447838000C9334 /* MatrixAddition.swift */; };
+		7136318D2A447838000C9334 /* MatrixConcatenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7136317B2A447838000C9334 /* MatrixConcatenation.swift */; };
+		7136318E2A447838000C9334 /* MatrixSubtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7136317C2A447838000C9334 /* MatrixSubtraction.swift */; };
+		7136318F2A447838000C9334 /* MatrixRowsAndColumns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7136317D2A447838000C9334 /* MatrixRowsAndColumns.swift */; };
+		713631902A447838000C9334 /* MatrixCustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7136317E2A447838000C9334 /* MatrixCustomStringConvertible.swift */; };
+		713631912A447838000C9334 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7136317F2A447838000C9334 /* Matrix.swift */; };
+		713631922A447838000C9334 /* MatrixMultiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713631802A447838000C9334 /* MatrixMultiplication.swift */; };
+		713631932A447838000C9334 /* MatrixTransposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713631812A447838000C9334 /* MatrixTransposition.swift */; };
+		713631942A447838000C9334 /* MatrixInverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713631822A447838000C9334 /* MatrixInverse.swift */; };
+		713631952A447838000C9334 /* MatrixCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713631832A447838000C9334 /* MatrixCreation.swift */; };
+		713631962A447838000C9334 /* MatrixSubscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713631842A447838000C9334 /* MatrixSubscripting.swift */; };
+		713631972A447838000C9334 /* MatrixDivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713631852A447838000C9334 /* MatrixDivision.swift */; };
+		713631982A447838000C9334 /* MatrixEquatableComparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713631862A447838000C9334 /* MatrixEquatableComparable.swift */; };
 		73265EE226A40C6000598DCC /* DBSphereView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73265EE126A40C6000598DCC /* DBSphereView.swift */; };
 		73265EE326A40C6000598DCC /* DBSphereView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73265EE126A40C6000598DCC /* DBSphereView.swift */; };
-		737C0E971F9A4E8D002D154E /* MatrixCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737C0E961F9A4E8D002D154E /* MatrixCreation.swift */; };
-		737C0E991F9A4E9F002D154E /* MatrixConcatenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737C0E981F9A4E9F002D154E /* MatrixConcatenation.swift */; };
 		7398776E1F96471A006DC997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398776D1F96471A006DC997 /* AppDelegate.swift */; };
 		739877701F96471A006DC997 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398776F1F96471A006DC997 /* ViewController.swift */; };
 		739877731F96471A006DC997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739877711F96471A006DC997 /* Main.storyboard */; };
 		739877751F96471A006DC997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 739877741F96471A006DC997 /* Assets.xcassets */; };
 		739877781F96471A006DC997 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739877761F96471A006DC997 /* LaunchScreen.storyboard */; };
-		739877BC1F97A235006DC997 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877921F97A235006DC997 /* Matrix.swift */; };
-		739877C71F97A235006DC997 /* MatrixMultiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398779D1F97A235006DC997 /* MatrixMultiplication.swift */; };
-		739877CA1F97A235006DC997 /* MatrixSubscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877A01F97A235006DC997 /* MatrixSubscripting.swift */; };
 		73B8E4831F9B9E1F009903C9 /* DBSphereTagCloud_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 73B8E4811F9B9E1F009903C9 /* DBSphereTagCloud_Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73B8E4861F9B9E1F009903C9 /* DBSphereTagCloud_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B8E47F1F9B9E1F009903C9 /* DBSphereTagCloud_Framework.framework */; };
 		73B8E4871F9B9E1F009903C9 /* DBSphereTagCloud_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 73B8E47F1F9B9E1F009903C9 /* DBSphereTagCloud_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		73B8E48C1F9B9E2F009903C9 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877921F97A235006DC997 /* Matrix.swift */; };
-		73B8E48D1F9B9E2F009903C9 /* MatrixConcatenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737C0E981F9A4E9F002D154E /* MatrixConcatenation.swift */; };
-		73B8E48E1F9B9E2F009903C9 /* MatrixCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737C0E961F9A4E8D002D154E /* MatrixCreation.swift */; };
-		73B8E48F1F9B9E2F009903C9 /* MatrixMultiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398779D1F97A235006DC997 /* MatrixMultiplication.swift */; };
-		73B8E4901F9B9E2F009903C9 /* MatrixSubscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739877A01F97A235006DC997 /* MatrixSubscripting.swift */; };
 		73B8E4941F9B9E3E009903C9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B8E4931F9B9E3B009903C9 /* Accelerate.framework */; };
 		73B8E4961F9B9E4B009903C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B8E4951F9B9E46009903C9 /* UIKit.framework */; };
 /* End PBXBuildFile section */
@@ -56,9 +64,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		713631752A447838000C9334 /* MatrixComponentWiseFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixComponentWiseFunction.swift; sourceTree = "<group>"; };
+		713631762A447838000C9334 /* MatrixSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixSum.swift; sourceTree = "<group>"; };
+		713631772A447838000C9334 /* MatrixIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixIO.swift; sourceTree = "<group>"; };
+		713631782A447838000C9334 /* MatrixMisc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixMisc.swift; sourceTree = "<group>"; };
+		713631792A447838000C9334 /* MatrixRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixRandom.swift; sourceTree = "<group>"; };
+		7136317A2A447838000C9334 /* MatrixAddition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixAddition.swift; sourceTree = "<group>"; };
+		7136317B2A447838000C9334 /* MatrixConcatenation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixConcatenation.swift; sourceTree = "<group>"; };
+		7136317C2A447838000C9334 /* MatrixSubtraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixSubtraction.swift; sourceTree = "<group>"; };
+		7136317D2A447838000C9334 /* MatrixRowsAndColumns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixRowsAndColumns.swift; sourceTree = "<group>"; };
+		7136317E2A447838000C9334 /* MatrixCustomStringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixCustomStringConvertible.swift; sourceTree = "<group>"; };
+		7136317F2A447838000C9334 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		713631802A447838000C9334 /* MatrixMultiplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixMultiplication.swift; sourceTree = "<group>"; };
+		713631812A447838000C9334 /* MatrixTransposition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixTransposition.swift; sourceTree = "<group>"; };
+		713631822A447838000C9334 /* MatrixInverse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixInverse.swift; sourceTree = "<group>"; };
+		713631832A447838000C9334 /* MatrixCreation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixCreation.swift; sourceTree = "<group>"; };
+		713631842A447838000C9334 /* MatrixSubscripting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixSubscripting.swift; sourceTree = "<group>"; };
+		713631852A447838000C9334 /* MatrixDivision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixDivision.swift; sourceTree = "<group>"; };
+		713631862A447838000C9334 /* MatrixEquatableComparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixEquatableComparable.swift; sourceTree = "<group>"; };
 		73265EE126A40C6000598DCC /* DBSphereView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBSphereView.swift; path = ../../Sources/DBSphereTagCloudSwift/DBSphereView.swift; sourceTree = "<group>"; };
-		737C0E961F9A4E8D002D154E /* MatrixCreation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixCreation.swift; sourceTree = "<group>"; };
-		737C0E981F9A4E9F002D154E /* MatrixConcatenation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixConcatenation.swift; sourceTree = "<group>"; };
 		7398776A1F96471A006DC997 /* DBSphereTagCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBSphereTagCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7398776D1F96471A006DC997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7398776F1F96471A006DC997 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,9 +90,6 @@
 		739877741F96471A006DC997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		739877771F96471A006DC997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		739877791F96471A006DC997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		739877921F97A235006DC997 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
-		7398779D1F97A235006DC997 /* MatrixMultiplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixMultiplication.swift; sourceTree = "<group>"; };
-		739877A01F97A235006DC997 /* MatrixSubscripting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixSubscripting.swift; sourceTree = "<group>"; };
 		73B8E47F1F9B9E1F009903C9 /* DBSphereTagCloud_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DBSphereTagCloud_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B8E4811F9B9E1F009903C9 /* DBSphereTagCloud_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBSphereTagCloud_Framework.h; sourceTree = "<group>"; };
 		73B8E4821F9B9E1F009903C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,10 +118,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		713631742A447838000C9334 /* SwiftNumLinear */ = {
+			isa = PBXGroup;
+			children = (
+				713631752A447838000C9334 /* MatrixComponentWiseFunction.swift */,
+				713631762A447838000C9334 /* MatrixSum.swift */,
+				713631772A447838000C9334 /* MatrixIO.swift */,
+				713631782A447838000C9334 /* MatrixMisc.swift */,
+				713631792A447838000C9334 /* MatrixRandom.swift */,
+				7136317A2A447838000C9334 /* MatrixAddition.swift */,
+				7136317B2A447838000C9334 /* MatrixConcatenation.swift */,
+				7136317C2A447838000C9334 /* MatrixSubtraction.swift */,
+				7136317D2A447838000C9334 /* MatrixRowsAndColumns.swift */,
+				7136317E2A447838000C9334 /* MatrixCustomStringConvertible.swift */,
+				7136317F2A447838000C9334 /* Matrix.swift */,
+				713631802A447838000C9334 /* MatrixMultiplication.swift */,
+				713631812A447838000C9334 /* MatrixTransposition.swift */,
+				713631822A447838000C9334 /* MatrixInverse.swift */,
+				713631832A447838000C9334 /* MatrixCreation.swift */,
+				713631842A447838000C9334 /* MatrixSubscripting.swift */,
+				713631852A447838000C9334 /* MatrixDivision.swift */,
+				713631862A447838000C9334 /* MatrixEquatableComparable.swift */,
+			);
+			name = SwiftNumLinear;
+			path = ../Sources/SwiftNumLinear;
+			sourceTree = "<group>";
+		};
 		739877611F96471A006DC997 = {
 			isa = PBXGroup;
 			children = (
-				739877891F97A235006DC997 /* SwiftNum */,
+				713631742A447838000C9334 /* SwiftNumLinear */,
 				7398776C1F96471A006DC997 /* DBSphereTagCloud */,
 				73B8E4801F9B9E1F009903C9 /* DBSphereTagCloud-Framework */,
 				7398776B1F96471A006DC997 /* Products */,
@@ -129,35 +176,6 @@
 				73265EE126A40C6000598DCC /* DBSphereView.swift */,
 			);
 			path = DBSphereTagCloud;
-			sourceTree = "<group>";
-		};
-		739877891F97A235006DC997 /* SwiftNum */ = {
-			isa = PBXGroup;
-			children = (
-				7398778E1F97A235006DC997 /* Sources */,
-			);
-			name = SwiftNum;
-			path = ../SwiftNum;
-			sourceTree = "<group>";
-		};
-		7398778E1F97A235006DC997 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				739877911F97A235006DC997 /* Linear */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		739877911F97A235006DC997 /* Linear */ = {
-			isa = PBXGroup;
-			children = (
-				739877921F97A235006DC997 /* Matrix.swift */,
-				737C0E981F9A4E9F002D154E /* MatrixConcatenation.swift */,
-				737C0E961F9A4E8D002D154E /* MatrixCreation.swift */,
-				7398779D1F97A235006DC997 /* MatrixMultiplication.swift */,
-				739877A01F97A235006DC997 /* MatrixSubscripting.swift */,
-			);
-			path = Linear;
 			sourceTree = "<group>";
 		};
 		73B8E4801F9B9E1F009903C9 /* DBSphereTagCloud-Framework */ = {
@@ -295,14 +313,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				739877CA1F97A235006DC997 /* MatrixSubscripting.swift in Sources */,
-				737C0E971F9A4E8D002D154E /* MatrixCreation.swift in Sources */,
+				713631932A447838000C9334 /* MatrixTransposition.swift in Sources */,
+				713631892A447838000C9334 /* MatrixIO.swift in Sources */,
 				739877701F96471A006DC997 /* ViewController.swift in Sources */,
-				739877BC1F97A235006DC997 /* Matrix.swift in Sources */,
+				713631902A447838000C9334 /* MatrixCustomStringConvertible.swift in Sources */,
+				7136318A2A447838000C9334 /* MatrixMisc.swift in Sources */,
+				7136318E2A447838000C9334 /* MatrixSubtraction.swift in Sources */,
+				7136318B2A447838000C9334 /* MatrixRandom.swift in Sources */,
+				713631972A447838000C9334 /* MatrixDivision.swift in Sources */,
+				713631882A447838000C9334 /* MatrixSum.swift in Sources */,
+				713631952A447838000C9334 /* MatrixCreation.swift in Sources */,
 				7398776E1F96471A006DC997 /* AppDelegate.swift in Sources */,
 				73265EE226A40C6000598DCC /* DBSphereView.swift in Sources */,
-				739877C71F97A235006DC997 /* MatrixMultiplication.swift in Sources */,
-				737C0E991F9A4E9F002D154E /* MatrixConcatenation.swift in Sources */,
+				7136318C2A447838000C9334 /* MatrixAddition.swift in Sources */,
+				713631982A447838000C9334 /* MatrixEquatableComparable.swift in Sources */,
+				713631942A447838000C9334 /* MatrixInverse.swift in Sources */,
+				713631912A447838000C9334 /* Matrix.swift in Sources */,
+				7136318F2A447838000C9334 /* MatrixRowsAndColumns.swift in Sources */,
+				713631922A447838000C9334 /* MatrixMultiplication.swift in Sources */,
+				7136318D2A447838000C9334 /* MatrixConcatenation.swift in Sources */,
+				713631962A447838000C9334 /* MatrixSubscripting.swift in Sources */,
+				713631872A447838000C9334 /* MatrixComponentWiseFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,12 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73B8E48C1F9B9E2F009903C9 /* Matrix.swift in Sources */,
-				73B8E48D1F9B9E2F009903C9 /* MatrixConcatenation.swift in Sources */,
-				73B8E48E1F9B9E2F009903C9 /* MatrixCreation.swift in Sources */,
 				73265EE326A40C6000598DCC /* DBSphereView.swift in Sources */,
-				73B8E48F1F9B9E2F009903C9 /* MatrixMultiplication.swift in Sources */,
-				73B8E4901F9B9E2F009903C9 /* MatrixSubscripting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

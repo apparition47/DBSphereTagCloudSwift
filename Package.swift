@@ -12,11 +12,13 @@ let package = Package(
             targets: ["DBSphereTagCloudSwift"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/apparition47/SwiftNum", .branch("tools"))
     ],
     targets: [
         .target(
             name: "DBSphereTagCloudSwift",
-            dependencies: ["SwiftNum"]),
+            dependencies: ["SwiftNumLinear"]),
+        .target(
+            name: "SwiftNumLinear",
+            dependencies: []),
     ]
 )
