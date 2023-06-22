@@ -6,6 +6,7 @@
 //  Copyright (c) 2014年 Xinbao Dong. All rights reserved.
 //
 
+import SwiftNumLinear
 import UIKit
 
 struct DBPoint {
